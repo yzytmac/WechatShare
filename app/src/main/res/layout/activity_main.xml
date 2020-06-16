@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:text="点击下面预览效果进行内容设置:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/space_share"
+            android:background="@drawable/share_bg"
+            android:paddingTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="2dp"
+                android:id="@+id/tv_title"
+                android:onClick="onClick"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="16sp"
+                android:textColorHint="#000000"
+                android:hint="点击设置标题,点击设置标题..."
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:onClick="onClick"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_title"
+                android:src="@drawable/ic_launcher2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:onClick="onClick"
+                android:layout_marginLeft="8dp"
+                android:lineSpacingExtra="2dp"
+                android:textSize="12sp"
+                android:layout_below="@id/tv_title"
+                android:layout_toLeftOf="@id/iv_img"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:hint="点击设置文案内容,点击设置文案内容,点击设置文案内容..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/iv_img"
+                android:background="@color/colorBg"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+
+            <TextView
+                android:id="@+id/tv_tail"
+                android:onClick="onClick"
+                android:layout_margin="5dp"
+                android:layout_below="@id/line"
+                android:textSize="10sp"
+                android:text="点击修改尾巴"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_link"
+            android:layout_below="@id/space_share"
+            android:layout_alignRight="@id/space_share"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_link"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_link"
+                android:hint="点击设置网页链接"
+                android:textColorHint="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:gravity="center_horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_below="@id/ll_internet"
+        android:layout_alignRight="@id/space_share"
+        android:layout_margin="10dp"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:text="分享到微信"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_internet"
+        android:gravity="center_horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_below="@id/ll_link"
+        android:layout_alignRight="@id/space_share"
+        android:layout_margin="10dp"
+        android:onClick="onClick"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_internet"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:text="访问该网页"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
