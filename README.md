@@ -8,7 +8,9 @@
 
 <img src="./screenshot/Screenshot_2020-06-16-15-46-10-721_android.jpg" style="zoom:20%;" />
 
-<video src="./screenshot/Screenrecorder-2020-06-16-15-41-21-442.mp4" autoplay="true" style="zoom:30%;"/>
+<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
+      <source id="mp4" src="./screenshot/Screenrecorder-2020-06-16-15-41-21-442.mp4" type="video/mp4">
+</video>
 
 
 
