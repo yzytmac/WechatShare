@@ -1,5 +1,5 @@
 ## 微信自定义分享神器
-
+Android版微信自定义分享神器，可自定义微信分享中的小尾巴，将自己伪装成其他App进行微信分享  
 <img src="screenshot/Screenshot_2020-06-16-15-45-32-578_com.yzytmac.wechatshare.jpg" style="zoom:20%;" />
 
 <img src="./screenshot/Screenshot_2020-06-16-15-45-37-353_com.yzytmac.wechatshare.jpg" style="zoom:20%;" />
